@@ -24,7 +24,7 @@ while (!isGameOver) {
   println("Enter a number between 1 and 9 to start your go")
   var input = Console.readInt
   if (input < 1 || input > 9) {
-    println("You fucking idiot, try again")
+    println("You idiot, try again")
   }
   var xAxis = (input - 1) / 3
   var yAxis = (input - 1) % 3
