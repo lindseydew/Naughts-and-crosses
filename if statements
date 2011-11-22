@@ -1,0 +1,31 @@
+	for (x <- 0 to 2)
+	{
+ 		for (y <- 0 to 2)
+		{
+			board.get(x,y) == Some(Some(letter))
+		}
+	}
+
+|| 	for (y <- 0 to 2)
+		{
+			for (x <- 0 to 2)
+			{ 
+				board.get(x,y) == Some(Some(letter))
+			}
+		}
+||	for {
+		 	x <- 0 to 2
+			y <- 0 to 2		
+		}{
+			if (x==y) && board.get(x,y) == Some(Some(letter))
+			}
+
+
+board.get(Coord(0,0)) == Some(Some(letter)) && board.get(Coord(0,1)) == Some(Some(letter)) && board.get(Coord(0,2)) == Some(Some(letter))
+     || board.get(Coord(1,0)) == Some(Some(letter)) && board.get(Coord(1,1)) == Some(Some(letter)) && board.get(Coord(1,2)) == Some(Some(letter))
+     || board.get(Coord(2,0)) == Some(Some(letter)) && board.get(Coord(2,1)) == Some(Some(letter)) && board.get(Coord(2,2)) == Some(Some(letter))
+     || board.get(Coord(0,0)) == Some(Some(letter)) && board.get(Coord(1,0)) == Some(Some(letter)) && board.get(Coord(2,0)) == Some(Some(letter))
+     || board.get(Coord(0,1)) == Some(Some(letter)) && board.get(Coord(1,1)) == Some(Some(letter)) && board.get(Coord(2,1)) == Some(Some(letter))
+     || board.get(Coord(0,2)) == Some(Some(letter)) && board.get(Coord(1,2)) == Some(Some(letter)) && board.get(Coord(2,2)) == Some(Some(letter))
+     || board.get(Coord(0,0)) == Some(Some(letter)) && board.get(Coord(1,1)) == Some(Some(letter)) && board.get(Coord(2,2)) == Some(Some(letter))
+     || board.get(Coord(0,2)) == Some(Some(letter)) && board.get(Coord(1,1)) == Some(Some(letter)) && board.get(Coord(2,0)) == Some(Some(letter))
