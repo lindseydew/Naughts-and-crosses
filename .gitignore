@@ -1,1 +1,4 @@
 *.class
+*.iml
+*.scala.orig
+.idea/*

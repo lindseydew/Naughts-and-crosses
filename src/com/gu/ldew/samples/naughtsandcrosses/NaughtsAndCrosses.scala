@@ -1,3 +1,5 @@
+package com.gu.ldew.samples.naughtsandcrosses
+
 import scala.collection.mutable.Map
 
 case class Coord (x: Int, y: Int)
